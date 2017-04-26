@@ -1,0 +1,154 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a.normal{
+    color: #999!important;
+}
+
+a.normal:hover{
+    color: #666;
+    font-weight: bold;
+}
+
+a:focus{
+    text-decoration: none;
+}
+
+button:focus{
+    outline: none!important;
+}
+
+td>.checkbox-inline{
+    padding: 0 15px 0 0!important;
+    margin-left: 0!important;
+    min-height: 0!important;
+}
+
+.body-left{
+    width: 220px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    background-color: #2f4050;
+    color: #a7b1c2;
+}
+
+.body-right{
+    width: calc( 100% - 220px);
+    height: 100%;
+    float: left;
+    background-color: #f2f2f3;
+    overflow-y: auto;
+    border-top: 2px solid #2f4050;
+    border-bottom: 2px solid #2f4050;
+}
+
+.menu-content{
+    width: 237px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#admin-logo{
+    padding: 25px 10px;
+}
+
+.admin-panel-body,.admin-panel{
+    background-color: #293846;
+    color: #a7b1c2;
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.05);
+    box-shadow: 0 0 0 rgba(0,0,0,.05);
+}
+
+.admin-panel-body{
+    border: none!important;
+}
+
+.admin-panel>.panel-heading{
+    background-color: transparent;
+    border-color: #293846;
+    color: #a7b1c2;
+}
+
+.admin-panel a:hover{
+    color: #e2e2e2;
+    text-decoration: none;
+}
+
+.collapse-active2{
+    background-color: #293846;
+}
+
+.panel-title-h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu-list>li{
+    padding: 0 0 8px 17px;
+}
+
+.menu-list>li>a{
+    color: #a7b1c2;
+    text-decoration: none;
+}
+.menu-list>li>a.menu-active,.h4-active{
+    color: #e2e2e2;
+    text-decoration: none;
+}
+
+.admin-header{
+    height: 60px;
+    border-bottom: 1px solid #e8e8e8;
+    color: #999;
+}
+
+.admin-footer{
+    width: calc( 100% - 220px);
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background-color: #f1f1f2;
+    border-top: 1px solid #e8e8e8;
+    font-size: 12px;
+}
+
+.parent-wrap{
+    min-height:calc( 100% - 95px);
+    padding: 25px 25px 0 25px;
+}
+
+.content-wrap{
+    width: 100%;
+    min-height: 100%;
+    background-color: #fdfdfe;
+    box-shadow: 0 -5px 5px rgba(215, 218, 220, 0.8);
+    padding-bottom: 25px;
+}
+
+.action-title{
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 12px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-search{
+    padding: 15px;
+    text-align: right;
+}
+
+.content-action{
+    padding: 15px;
+}
+
+.data-list{
+    padding: 0 15px;
+}
