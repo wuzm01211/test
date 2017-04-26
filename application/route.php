@@ -12,5 +12,6 @@
 return [
     '/'=>'index',
     '__miss__'=>'run_info/miss',
-    'admin'=>'app/admin/index/index'
+    'admin/index'=>'app/admin/index/index',
+    'admin/test/:id/:name'=>'app/admin/index/test'
 ];
