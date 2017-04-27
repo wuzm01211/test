@@ -13,5 +13,8 @@ return [
     '/'=>'index',
     '__miss__'=>'run_info/miss',
     'admin/index'=>'app/admin/index/index',
-    'admin/test/:id/:name'=>'app/admin/index/test'
+    'admin/test/:id/:name'=>'app/admin/index/test',
+    'admin/type/index'=>'admin/type/index',
+    'admin/type/add'=>'admin/type/add',
+    'admin/type/set_type_cache'=>'admin/type/setTypeCache',
 ];
