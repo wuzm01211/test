@@ -1,0 +1,63 @@
+<!--页面头部-->
+{include file='common/header'}
+<!--页面头部结束-->
+<body>
+<!--左侧菜单栏-->
+{include file='common/body_left'}
+<!--左侧菜单栏结束-->
+<div class="body-right">
+    <!--右侧头部-->
+    {include file='common/admin_header'}
+    <!--右侧头部结束-->
+
+    <!--内容区-->
+    <div class="container-fluid parent-wrap">
+        <div class="content-wrap">
+            <div class="action-title">分类列表</div>
+            <div class="content-action col-lg-3">
+                <div class="btn-group-md" role="group" aria-label="content-action">
+                    <a class="btn btn-primary" href="{:url('admin/type/add')}">添加</a>
+                </div>
+            </div>
+            <div class="content-search col-lg-9">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="name">分类</label>
+                        <input class="form-control" name="name" id="name" placeholder="请输入分类">
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-search">&nbsp;</i>搜索</button>
+                </form>
+            </div>
+            <div class="data-list">
+                <table class="table table-striped table-bordered table-hover">
+                    <tr>
+                        <th><input type="checkbox" id="check-all"></th>
+                        <th>分类</th>
+                        <th>父类</th>
+                        <th>操作</th>
+                    </tr>
+                    {volist name='list' id='val' empty=""}
+                    <tr>
+                        <th><input class="data-check" type="checkbox" value="1" name="check_arr[]"></th>
+                        <td>{$val.name}</td>
+                        <td>{$val.pid_name}</td>
+                        <td>
+                            <div class="btn-group-xs" role="group" aria-label="content-action" data-id="1">
+                                <button class="btn btn-info">修改</button>
+                                <button class="btn btn-danger delOne">删除</button>
+                            </div>
+                        </td>
+                    </tr>
+                    {/volist}
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--内容区结束-->
+    <!--右侧版权信息-->
+    {include file='common/admin_footer'}
+    <!--右侧版权结束-->
+</div>
+<!--页面页脚-->
+{include file='common/footer'}
+<!--页面页脚结束-->
